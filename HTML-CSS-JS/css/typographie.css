@@ -1,8 +1,28 @@
 /* Header */
 header>nav>a{
-    font-family: Helvetica, sans-serif;
     font-size: 2vw;
     font-style: normal;
     text-decoration: none;
+}
+
+/* Text */
+h1,h2, h3, h4, h5, h6, p, a{
+    font-family: Helvetica, sans-serif;
     color: #FAFAFA;
+}
+
+h1{
+    font-size: 180px;
+}
+
+h3{
+    font-size: 40px;
+}
+h6{
+    font-size: 25px;
+    margin: 6px 0;
+}
+p{
+    font-size: 18px;
+    margin: 0 0 20px;
 }
