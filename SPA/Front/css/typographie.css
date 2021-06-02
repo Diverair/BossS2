@@ -1,0 +1,47 @@
+/* Header */
+header>nav>a{
+    font-size: 2vw;
+    font-style: normal;
+    text-decoration: none;
+}
+
+/* Text */
+h1,h2, h3, h4, h5, h6, p, a, th{
+    font-family: Helvetica, sans-serif;
+    color: #FAFAFA;
+}
+
+h1{
+    font-size: 130px;
+    text-align: center;
+    margin: 0;
+    padding: 40px 0;
+}
+
+h2{
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+h3{
+    font-size: 40px;
+    text-align: center;
+}
+
+h4{
+    font-size: 30px;
+}
+
+h6{
+    font-size: 25px;
+    margin: 6px 0;
+}
+p{
+    font-size: 14px;
+    margin: 0 0 20px;
+}
+th{
+    text-align: left;
+}

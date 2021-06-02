@@ -1,0 +1,390 @@
+html{
+    scroll-padding-top: 90px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #040404;
+}
+
+body>*{
+    min-width: 700px;
+}
+
+/* Header */
+header{
+    width: 100%;
+    display: flex;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    background-color: #171717;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+header>div{
+    width: 210px;
+    height: 80px;
+    margin: 5px 20px ;
+}
+
+header>nav{
+    width: calc(100% - (250px * 2));
+    display: flex;
+    text-align: center;
+}
+
+header>nav>a{
+    width: 50%;
+    margin-top: 32px;
+}
+
+header>nav>a:hover{
+    padding-top: 10px;
+    border-top: #FAFAFA 4px solid;
+    transform: translateY(-10px);
+}
+
+
+
+
+
+
+
+/* Footer */
+footer{
+    background-color: #040404;
+    border-top: #707070 3px solid;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    z-index: 1;
+    transform: translateY(90px);
+}
+
+.footer-reseaux{
+    height: calc(100px - 20px);
+}
+
+.footer-reseaux>img{
+    margin: 0 20px;
+}
+
+.footer-mentionlegale{
+    height: calc(61px - 12px);
+    background-color: #333333;
+    padding-top : 2%;
+}
+
+.footer-mentionlegale>p{
+    margin: 0;
+}
+
+
+
+
+/* Div Contenu */
+.imagehautpagefond.Accueil{
+    background-image: url("img/Marina-Kaye/accueil.jpg");
+}
+
+.imagehautpagefond.Biographie{
+    background-image: url("img/Bio/bio.jpg");
+}
+
+.imagehautpagefond.Titre{
+    background-image: url("img/Titre/image-entete-homeless.jpg");
+}
+
+.imagehautpagefond.Album{
+    background-image: url("img/Albums/affiche-fearless.jpg");
+}
+
+.imagehautpagefond{
+    height: calc(100vh - 90px - 50px);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    z-index: 0;
+}
+
+
+
+.page{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    top: 90px;
+    left: 0;
+}
+
+
+.createbody{
+    height: calc(100vh - 90px);
+    width: 79%;
+    margin: 90px 10.5% 0;
+}
+
+.page>section{
+    text-align: center;
+    height: calc(100vh - 90px - 50px);
+}
+
+section#sectionbiographie{
+    min-height: calc(100vh - 90px - 90px);
+}
+
+section#sectionalbums{
+    min-height: calc(100vh - 40px - 90px);
+}
+
+.imagehautpage{
+    border: #FAFAFA 20px solid;
+}
+
+section#sectionalbums,
+section#sectionbiographie,
+section#biographie{
+    margin: 0 auto;
+    padding: 40px 0 0;
+    width: calc(100% - 21%);
+}
+
+.imagehautpage.accueil{
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+}
+
+.imagehautpage.biographie{
+    width: auto;
+    height: 60%;
+    margin: 11% 0;
+}
+
+.flecheid{
+    border-top: #707070 2px solid;
+    text-align: center;
+    padding: calc((50px - 30px)/2);
+}
+
+.flecheid:first-of-type{
+    border-top: none;
+}
+
+.flecheid>a>svg{
+    width: auto;
+    height: 30px;
+}
+
+.bodyfondnoir{
+    background-color: #040404;
+}
+
+
+#sectionbiographie>img{
+    width: 250px;
+    height: 316px;
+    float: left;
+    padding-right: 20px;
+}
+
+
+.grandBouton{
+    width: 250px;
+    border: #FAFAFA00 3px solid;
+    border-radius: 26px;
+    background-color: #FAFAFA;
+    margin: 10% auto 20px;
+    text-align: center;
+    padding: calc((40px - 24px)/2) 0;
+}
+
+.petitBouton{
+    width: 150px;
+    border: #FAFAFA00 3px solid;
+    border-radius: 26px;
+    background-color: #FAFAFA;
+    margin: 10% auto 0;
+    text-align: center;
+    padding: calc((40px - 18px)/2) 0;
+}
+
+.grandBouton>a{
+    color: #040404;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.petitBouton>a{
+    color: #040404;
+    text-decoration: none;
+    font-size: 18px;
+}
+.grandBouton:hover,
+.petitBouton:hover{
+    background-color: #FAFAFA00;
+    border: #FAFAFA 3px solid;
+}
+
+.grandBouton:hover>a,
+.petitBouton:hover>a{
+    color: #FAFAFA;
+}
+
+.grandBouton>a>svg{
+    fill: #040404;
+    height: 28px;
+    width: auto;
+    transform: translateY(5px) translateX(20px);
+}
+
+.petitBouton>a>svg{
+    fill: #040404;
+    height: 21px;
+    width: auto;
+    transform: translateY(3px) translateX(10px);
+}
+
+.grandBouton:hover>a>svg,
+.petitBouton:hover>a>svg{
+    fill: #FAFAFA;
+}
+
+#sectionalbums{
+    display: flex;
+    width: 100%;
+}
+
+.album{
+    width: calc(100% /3);
+    margin: 0 10px;
+}
+
+.album:first-of-type{
+    margin-left: 0;
+}
+
+.album:last-of-type{
+    margin-right: 0;
+}
+
+.album>img{
+    width: 100%;
+}
+
+.album>div>p{
+    margin: 6px 0 0;
+}
+
+section#biographie{
+    min-height: calc(100vh - 90px);
+}
+
+.carre{
+    width: 25%;
+    height: auto;
+}
+
+section#biographie{
+    padding-top: 10px;
+}
+
+section#biographie>ul>li{
+    display: flex;
+    margin: 40px 0;
+}
+
+section#biographie>ul>li>div{
+    padding-left:  20px;
+}
+
+
+input{
+
+    margin: 16px 0 16px;
+}
+
+.input{
+    height: 40px;
+    border-radius: 20px;
+    width: 100%;
+}
+form>div>div{
+    width: 75%;
+}
+
+form>div>div:first-of-type{
+    width: 25%;
+}
+
+.input.colonneg,
+.input.colonned{
+    width: 95%;
+}
+
+.input.colonned{
+    height: calc(46px * 3 + 4 * 16px);
+    margin-left: 5%;
+    margin-top: 16px;
+}
+
+.input.colonned[placeholder]{
+    top: 0;
+}
+
+.grandBouton.margin{
+    margin: 0;
+    position: relative;
+    right: 0;
+}
+
+.grandBouton[value]:hover{
+    color: #FAFAFA;
+}
+
+div.information{
+    display: flex;
+}
+
+.informationgenerale{
+    background-color: #333333;
+    min-width: 300px;
+    width: 25%;
+    padding: 40px;
+}
+
+.informationgenerale>img{
+    width: 100%;
+}
+
+.informationspecifique{
+    padding: 40px 40px 40px 20%;
+}
+
+.informationspecifique>img{
+    margin: 0 calc((100% - 40px - 4 * 57px)/8);
+}
+
+.informationgenerale>a{
+    margin: 0 calc((100% - 40px - 4 * 57px)/8);
+}
+
+table{
+    width: 100%;
+}
+
+table>tbody>tr>td,
+table>thead>tr>th{
+    margin: 0;
+    padding: 13px 0;
+    border-top: #FAFAFA 2px solid;
+}
