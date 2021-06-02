@@ -1,0 +1,108 @@
+let Accueil = Vue.component('Accueil',{
+    template:`
+    <div class="body">
+        <div class="imagehautpagefond Accueil">
+        </div>
+        <div class="page">
+            <section>
+                <h1>Marina KAYE</h1>
+                <br>
+                <img src="css/img/Logo/Logo-img.png"  class="imagehautpage accueil" alt="">
+            </section>
+            <div class="bodyfondnoir">
+                <div class="flecheid">
+                    <router-link to="accueil#sectionbiographie">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.228 48.688">
+                            <path id="Icon_awesome-chevron-down" data-name="Icon awesome-chevron-down" d="M37.394,56.079l-35.7-35.7a4.409,4.409,0,0,1,0-6.236L5.854,9.975a4.409,4.409,0,0,1,6.228-.007l28.43,28.3,28.43-28.3a4.409,4.409,0,0,1,6.228.007l4.164,4.164a4.409,4.409,0,0,1,0,6.236l-35.7,35.7A4.41,4.41,0,0,1,37.394,56.079Z" transform="translate(-0.398 -8.683)" fill="#ebebeb"/>
+                        </svg>
+                    </router-link>
+                </div>
+                <section id="sectionbiographie">
+                    <img src="css/img/Marina-Kaye/Marina-Kaye-Portrait.jpg" alt="Marine KAYE en train de chanter">
+                    <div>
+                        <p>
+                            Marina Kaye est une chanteuse française de 22 ans révélée il y a quelques années par son premier single « Homeless », alors n°1 des ventes en France. Avant cela, elle n'avait jamais imaginé devenir chanteuse. Enfant timide, se qualifiant elle-même de « différente », elle ignorait qu’elle savait chanter jusqu’à ce qu’une de ses amies ne le lui fasse remarquer. Après que cette dernière l’ait inscrite à « La France à incroyable talent », elle remporte l’émission en 2011 à l’âge de 13 ans. En 2012, elle signe avec TGIT Music pour préparer son premier album, Fearless, faisant partie des meilleures ventes en France et depuis certifié triple platine. Son tube, « Homeless » ainsi que sa chanson « Freeze You Out », écrite par SIA, ont été vus des millions de fois sur YouTube. Aujourd’hui, trois ans après la sortie de son second album, Explicit, Marina cumule +90 millions de vues sur sa chaîne YouTube et des millions de streams sur toutes les plateformes, et s'apprête à sortir son troisième album.
+                        </p>
+                        <p>
+                            Sa voix - puissante et harmonieuse – se fera plus pop et théâtrale que dans ses précédents albums, un atout pour la parolière qu’elle est aussi. Son style musical peut passer d’une ballade au piano à des sons plus électro et RnB, mais l’élément clé de sa musique reste sa capacité à créer une ambiance particulière et intime à travers ses paroles. Ses chansons seront toujours « très personnelles », même lorsqu’elles se dévoilent à travers un ensemble de métaphores.
+                        </p>
+                    </div>
+    
+                    <div class="grandBouton">
+                        <a href="biographie.html">Découvrir <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.634 30.705">
+                            <path id="Icon_awesome-chevron-right" data-name="Icon awesome-chevron-right" d="M20.073,19.193,6.408,32.858a1.687,1.687,0,0,1-2.386,0L2.427,31.264a1.687,1.687,0,0,1,0-2.384L13.254,18,2.425,7.119a1.687,1.687,0,0,1,0-2.384L4.021,3.142a1.687,1.687,0,0,1,2.386,0L20.072,16.807A1.688,1.688,0,0,1,20.073,19.193Z" transform="translate(-1.933 -2.648)"/>
+                        </svg>
+                        </a>
+                    </div>
+    
+    
+                </section>
+                <div class="flecheid">
+                    <a href="index.html#sectionalbums">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.228 48.688">
+                            <path id="Icon_awesome-chevron-down" data-name="Icon awesome-chevron-down" d="M37.394,56.079l-35.7-35.7a4.409,4.409,0,0,1,0-6.236L5.854,9.975a4.409,4.409,0,0,1,6.228-.007l28.43,28.3,28.43-28.3a4.409,4.409,0,0,1,6.228.007l4.164,4.164a4.409,4.409,0,0,1,0,6.236l-35.7,35.7A4.41,4.41,0,0,1,37.394,56.079Z" transform="translate(-0.398 -8.683)" fill="#ebebeb"/>
+                        </svg>
+                    </a>
+                </div>
+                <section id="sectionalbums">
+                    <div class="album">
+                        <img src="css/img/Albums/fearless.jpg" alt="Pochette album Feraless">
+                        <div>
+                            <p>18 mai 2015</p>
+                            <p>22 titres</p>
+                            <h3>FEARLESS</h3>
+                            <div class="petitBouton">
+                                <a href="biographie.html">Découvrir <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.634 30.705">
+                                    <path id="Icon_awesome-chevron-right" data-name="Icon awesome-chevron-right" d="M20.073,19.193,6.408,32.858a1.687,1.687,0,0,1-2.386,0L2.427,31.264a1.687,1.687,0,0,1,0-2.384L13.254,18,2.425,7.119a1.687,1.687,0,0,1,0-2.384L4.021,3.142a1.687,1.687,0,0,1,2.386,0L20.072,16.807A1.688,1.688,0,0,1,20.073,19.193Z" transform="translate(-1.933 -2.648)"/>
+                                </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="album">
+                        <img src="css/img/Albums/explicit.jpg" alt="Pochette album Explicit">
+                        <div>
+                            <p>20 octobre 2017</p>
+                            <p>14 titres</p>
+                            <h3>Explicit</h3>
+                            <div class="petitBouton">
+                                <a href="biographie.html">Découvrir <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.634 30.705">
+                                    <path id="Icon_awesome-chevron-right" data-name="Icon awesome-chevron-right" d="M20.073,19.193,6.408,32.858a1.687,1.687,0,0,1-2.386,0L2.427,31.264a1.687,1.687,0,0,1,0-2.384L13.254,18,2.425,7.119a1.687,1.687,0,0,1,0-2.384L4.021,3.142a1.687,1.687,0,0,1,2.386,0L20.072,16.807A1.688,1.688,0,0,1,20.073,19.193Z" transform="translate(-1.933 -2.648)"/>
+                                </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="album">
+                        <img src="css/img/Albums/twisted.jpg" alt="Pochette album Twisted">
+                        <div>
+                            <p>6 novembre 2020</p>
+                            <p>11 titres</p>
+                            <h3>TWISTED</h3>
+                            <div class="petitBouton">
+                                <a href="biographie.html">Découvrir <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.634 30.705">
+                                    <path id="Icon_awesome-chevron-right" data-name="Icon awesome-chevron-right" d="M20.073,19.193,6.408,32.858a1.687,1.687,0,0,1-2.386,0L2.427,31.264a1.687,1.687,0,0,1,0-2.384L13.254,18,2.425,7.119a1.687,1.687,0,0,1,0-2.384L4.021,3.142a1.687,1.687,0,0,1,2.386,0L20.072,16.807A1.688,1.688,0,0,1,20.073,19.193Z" transform="translate(-1.933 -2.648)"/>
+                                </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    
+    `,
+    data(){
+        return{
+        }
+    },
+    mounted(){
+
+    },
+    methods:{
+
+    }
+})

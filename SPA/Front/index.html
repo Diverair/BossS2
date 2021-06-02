@@ -8,8 +8,76 @@
   <title>Marina KAYE</title>
   <link rel="stylesheet" href="css/mise-en-page.css">
   <link rel="stylesheet" href="css/typographie.css">
+
+  <!-- VUE JS -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <!-- -->
+  <script src="https://unpkg.com/vue-router"></script>
+  <!-- -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 </head>
 <body>
 
+<div id="app">
+  <header>
+    <div class=header-logo>
+      <img src="css/img/Logo/Logo.png" alt="Logo">
+    </div>
+    <nav>
+      <router-link :to="{name:'Accueil'}">
+        ACCUEIL
+      </router-link>
+      <router-link :to="{name:'Biographie'}">
+        BIOGRAPHIE
+      </router-link>
+
+    </nav>
+  </header>
+
+  <router-view></router-view>
+  <footer>
+    <div class="footer-reseaux">
+      <img src="css/img/Logo/facebook.svg" alt="">
+      <img src="css/img/Logo/instagram.svg" alt="">
+      <img src="css/img/Logo/twitter.svg" alt="">
+      <img src="css/img/Logo/spotify.svg" alt="">
+      <img src="css/img/Logo/deezer.svg" alt="">
+      <img src="css/img/Logo/youtube.svg" alt="">
+      <img src="css/img/Logo/itunes.svg" alt="">
+    </div>
+
+    <div class="footer-mentionlegale">
+      <p>Exercice réalisé dans le cadre pédagogique du <a href="http://mmimontbeliard.com">département MMI Montbéliard</a></p>
+    </div>
+  </footer>
+
+  <script src="pages/accueil.vue.js"></script>
+  <script src="pages/biographie.vue.js"></script>
+  <script src="pages/album.vue.js"></script>
+  <script src="pages/titre.vue.js"></script>
+  <script src="pages/Album/create.vue.js"></script>
+
+  <script>
+    let routes = [
+      {path: '/',             name:'Accueil',       component:Accueil},
+      {path: '/biographie',   name:'Biographie',    component:Biographie},
+      {path: '/album',        name:'Album',         component:Album},
+      {path: '/titre',        name:'Titre',         component:Titre},
+      {path: '/createalbum',  name:'CreateAlbum',   component:CreateAlbum},
+    ]
+
+    // Initialisation du router
+    let router = new VueRouter(
+            {routes: routes}
+    )
+    // La vue de l'application (id="app")
+    let app = new Vue({
+      el:"#app",
+      router:router
+    })
+  </script>
+
+</div>
 </body>
 </html>
